@@ -107,7 +107,10 @@ span.title {
 
 .action_buttons {
   padding-top: 88px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 1.8em;
 }
 
 .action_buttons .add_cart {
@@ -122,15 +125,17 @@ span.title {
     0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
   border-radius: 10px;
   /* transform: rotate(-180deg); */
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 .action_buttons .add_cart a,
 .action_buttons .book_table a {
   font-weight: 700;
   font-size: 18px;
-  line-height: 28px;
+  /* line-height: 28px; */
   color: #ffffff;
-  padding: 18px;
 }
 
 .action_buttons .book_table {
@@ -145,3 +150,25 @@ span.title {
     0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
   border-radius: 10px;
 }
+
+.hero_des .extra {
+  padding-top: 118px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 6em;
+}
+
+.hero_des .extra span:first-child {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.hero_des .extra span:last-child {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  opacity: 0.5;
+}
+
